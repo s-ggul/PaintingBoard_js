@@ -12,6 +12,7 @@ body{
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .canvas{
@@ -24,6 +25,31 @@ body{
 
 .controls{
     margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls .controls_btns{
+    margin-bottom: 30px;
+}
+
+.controls_btns button{
+    all:unset;
+    cursor:pointer;
+    background-color: white;
+    padding: 5px 0px;
+    width:80px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 5px rgba(50, 50, 93, 0.3), 0 10px 3px rgba(0,0,0,0);
+    border : 1px solid rgba(0,0,0,0.1);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.controls_btns button:active{
+    transform: scale(0.95);
 }
 
 .controls .controls_colors{
@@ -36,4 +62,9 @@ body{
     border-radius: 25px;
     /*원형으로 만들고 싶다면 길이의 반*/
     box-shadow: 0 10px 5px rgba(50, 50, 93, 0.3), 0 10px 3px rgba(0,0,0,0);   
+}
+
+.controls .controls_range{
+    margin-bottom: 20px;
+    accent-color: black;
 }
