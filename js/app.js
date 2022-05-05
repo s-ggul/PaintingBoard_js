@@ -56,6 +56,7 @@ function handleColorClick(event){
     const color = event.target.style.backgroundColor;
     ctx.strokeStyle = color;
     ctx.fillStyle = color;
+    range.style.accentColor = color;
 }
 
 function handleRangeChange(event)
